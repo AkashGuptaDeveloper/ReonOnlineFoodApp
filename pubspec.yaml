@@ -30,7 +30,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   font_awesome_flutter: ^8.5.0
   http: ^0.12.0+3
-  connectivity: ^0.4.9
+  connectivity: any
   progress_dialog: ^1.2.4
   carousel_pro: ^1.0.0
   cached_network_image: ^2.2.0+1

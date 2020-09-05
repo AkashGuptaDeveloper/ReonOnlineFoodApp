@@ -68,7 +68,7 @@ class GlobalFlag {
   // ignore: non_constant_identifier_names
   static String Enteremail="Enter your email address";
   // ignore: non_constant_identifier_names
-  static String GetOffers="Get Offers";
+  static String GetOffers="Buy Now";
   // ignore: non_constant_identifier_names
   static String HomeScreen="Home";
   // ignore: non_constant_identifier_names

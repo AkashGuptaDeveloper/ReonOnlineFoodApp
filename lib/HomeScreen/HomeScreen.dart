@@ -18,6 +18,7 @@ import 'package:reonapp/GlobalComponents/GlobalServiceURL/GlobalServiceURL.dart'
 import 'package:reonapp/Model/HomeListModel/CouponModel/CouponModel.dart';
 import 'package:reonapp/Model/HomeListModel/HomeListModel.dart';
 import 'package:reonapp/SubCategory/SubCategory.dart';
+import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 //---------------------------------START--------------------------------------//
 class HomeView extends StatefulWidget {
   static String tag = GlobalNavigationRoute.TagHomeView.toString();
@@ -861,10 +862,14 @@ class HomeViewState extends State<HomeView> {
         var RecivedStatus =Data["status"];
         if(RecivedStatus == 200){
           pr.hide();
+          Navigator.pop(context);
+          var Name = Namecontroller.text;
+          var Email = Emailcontroller.text;
+          var Mobile = Mobilecontroller.text;
+          FlutterOpenWhatsapp.sendSingleMessage("+971565602357", "Hi Reon , \n Name:  $Name. \n Email:  $Email \n Mobile: $Mobile  \n Thanks!");
           Namecontroller.clear();
           Emailcontroller.clear();
           Mobilecontroller.clear();
-          Navigator.pop(context);
         }else{
           pr.hide();
           _FormFailedAlert();
